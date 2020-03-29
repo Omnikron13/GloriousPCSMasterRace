@@ -1,0 +1,27 @@
+
+[CommonPCSDefence X2EquipmentTemplate]
+FriendlyName="PCS: Defence"
+FriendlyNamePlural="PCS: Defence"
+BriefSummary="The basic Defence sim makes the affected soldier slightly harder to hit."
+
+[RarePCSDefence X2EquipmentTemplate]
+FriendlyName="PCS: Advanced Defence"
+FriendlyNamePlural="PCS: Advanced Defence"
+BriefSummary="The Advanced Defence sim makes the affected soldier moderately harder to hit."
+
+[EpicPCSDefence X2EquipmentTemplate]
+FriendlyName="PCS: Superior Defence"
+FriendlyNamePlural="PCS: Superior Defence"
+BriefSummary="The Superior Defence sim makes the affected soldier notably harder to hit."
+
+
+
+[PCSDeepPockets X2EquipmentTemplate]
+FriendlyName="PCS: Deep Pockets"
+FriendlyNamePlural="PCS: Deep Pockets"
+BriefSummary="You know what they say about men with big pockets... \
+No, neither do I."
+
+[XComGame.UIArmory_Loadout]
+[UIArmory_Loadout]
+m_strInventoryLabels[eInvSlot_ExtraRocket4]=Deep Pockets ; FIXME: Remove if/when moving the slot
