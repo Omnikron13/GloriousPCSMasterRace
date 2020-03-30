@@ -24,4 +24,5 @@ No, neither do I."
 
 [XComGame.UIArmory_Loadout]
 [UIArmory_Loadout]
-m_strInventoryLabels[eInvSlot_ExtraRocket4]=Deep Pockets ; FIXME: Remove if/when moving the slot
+; FIXME: Remove if/when moving the slot
+m_strInventoryLabels[eInvSlot_ExtraRocket4]=Deep Pockets
