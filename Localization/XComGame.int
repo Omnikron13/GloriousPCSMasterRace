@@ -33,6 +33,23 @@ BriefSummary="The Superior Psi sim grants a large Psionics boost to the affected
 
 
 
+[CommonPCSHacking X2EquipmentTemplate]
+FriendlyName="PCS: Hacking"
+FriendlyNamePlural="PCS: Hacking"
+BriefSummary="The basic Hacking sim grants a small Hacking boost to the affected solider."
+
+[RarePCSHacking X2EquipmentTemplate]
+FriendlyName="PCS: Advanced Hacking"
+FriendlyNamePlural="PCS: Advanced Hacking"
+BriefSummary="The Advanced Hacking sim grants a moderate Hacking boost to the affected solider."
+
+[EpicPCSHacking X2EquipmentTemplate]
+FriendlyName="PCS: Superior Hacking"
+FriendlyNamePlural="PCS: Superior Hacking"
+BriefSummary="The Superior Hacking sim grants a large Hacking boost to the affected solider."
+
+
+
 [PCSDeepPockets X2EquipmentTemplate]
 FriendlyName="PCS: Deep Pockets"
 FriendlyNamePlural="PCS: Deep Pockets"
