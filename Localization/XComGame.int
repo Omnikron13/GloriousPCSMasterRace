@@ -16,6 +16,23 @@ BriefSummary="The Superior Defence sim makes the affected soldier notably harder
 
 
 
+[CommonPCSPsi X2EquipmentTemplate]
+FriendlyName="PCS: Psi"
+FriendlyNamePlural="PCS: Psi"
+BriefSummary="The basic Psi sim grants a small Psionics boost to the affected solider."
+
+[RarePCSPsi X2EquipmentTemplate]
+FriendlyName="PCS: Advanced Psi"
+FriendlyNamePlural="PCS: Advanced Psi"
+BriefSummary="The Advanced Psi sim grants a moderate Psionics boost to the affected solider."
+
+[EpicPCSPsi X2EquipmentTemplate]
+FriendlyName="PCS: Superior Psi"
+FriendlyNamePlural="PCS: Superior Psi"
+BriefSummary="The Superior Psi sim grants a large Psionics boost to the affected solider."
+
+
+
 [PCSDeepPockets X2EquipmentTemplate]
 FriendlyName="PCS: Deep Pockets"
 FriendlyNamePlural="PCS: Deep Pockets"
