@@ -9,9 +9,11 @@ enum RarityNames {
 };
 
 
+// Structure to hold per-tier data for basic chips
 struct Tier {
     var int Price;
 };
+// Structure mirroring config for basic PCS definitions
 struct Chip {
     var string Name;
     var ECharStatType Stat;
