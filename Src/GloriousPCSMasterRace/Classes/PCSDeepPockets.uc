@@ -25,7 +25,6 @@ static function X2DataTemplate CreatePCSDeepPockets() {
 	Template.bAlwaysUnique = false;
 	Template.Tier = 0;
     
-    Template.Abilities.AddItem('PCSDeepPockets_Ability');
 	Template.InventorySlot = eInvSlot_CombatSim;
 
     Template.OnEquippedFn = EquipDelegate; // TODO: probably won't need
