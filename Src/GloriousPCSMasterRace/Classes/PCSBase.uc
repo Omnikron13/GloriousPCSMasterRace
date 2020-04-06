@@ -4,7 +4,7 @@ class PCSBase extends X2Item;
 
 // Sets up loot tables which will essentially replace the inbuilt ones for PCS drops.
 static function CreateLootTables() {
-    CreateLootTable('GPMRDropsBasic');
+    CreateLootTable('GPMRDropsCommon');
     CreateLootTable('GPMRDropsRare');
     CreateLootTable('GPMRDropsEpic');
 }
