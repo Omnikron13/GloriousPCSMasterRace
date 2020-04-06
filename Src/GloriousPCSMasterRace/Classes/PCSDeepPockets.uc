@@ -1,5 +1,5 @@
 // This is an Unreal Script
-class PCSDeepPockets extends X2Item config(PCSDeepPockets);
+class PCSDeepPockets extends PCSBase config(PCSDeepPockets);
 
 
 var config EInventorySlot TEMP_SLOT; // FIXME: Remove if/when moving the slot

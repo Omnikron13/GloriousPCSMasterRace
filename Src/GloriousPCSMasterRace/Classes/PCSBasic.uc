@@ -1,5 +1,5 @@
 // This class serves as a base for simple stat-boosting PCS chips
-class PCSBasic extends X2Item config(PCSBasic);
+class PCSBasic extends PCSBase config(PCSBasic);
 
 
 enum RarityNames {
