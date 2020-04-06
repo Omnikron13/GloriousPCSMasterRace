@@ -12,6 +12,8 @@ enum RarityNames {
 // Structure to hold per-tier data for basic chips
 struct Tier {
     var int Price;
+    var name DropTable;
+    var int DropChance;
 };
 // Structure mirroring config for basic PCS definitions
 struct Chip {
@@ -41,6 +43,9 @@ static function array<X2DataTemplate> CreateTemplates() {
 // Creates a basic stat-boosting PCS chip of tier t
 protected static function X2DataTemplate CreatePCSBasic(Chip c, int t) {
 	local X2EquipmentTemplate template;
+    local name n;
+
+    n = name(GetEnum(enum'RarityNames', t) $ "PCS" $ c.Name);
 
     `CREATE_X2TEMPLATE(class'X2EquipmentTemplate', template, name(GetEnum(enum'RarityNames', t) $ "PCS" $ c.Name));
 
@@ -58,6 +63,8 @@ protected static function X2DataTemplate CreatePCSBasic(Chip c, int t) {
 
     // TODO: work out exactly what this is
 	//Template.BlackMarketTexts = default.PCSBlackMarketTexts;
+
+    AddLootDrop(n, c.Tiers[t].DropTable, c.Tiers[t].DropChance);
 
 	return template;
 }
