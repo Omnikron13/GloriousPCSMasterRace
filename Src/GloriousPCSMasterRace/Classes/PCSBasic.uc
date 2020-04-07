@@ -47,7 +47,7 @@ protected static function X2DataTemplate CreatePCSBasic(Chip c, int t) {
 
     n = name(GetEnum(enum'RarityNames', t) $ "PCS" $ c.Name);
 
-    `CREATE_X2TEMPLATE(class'X2EquipmentTemplate', template, name(GetEnum(enum'RarityNames', t) $ "PCS" $ c.Name));
+    `CREATE_X2TEMPLATE(class'X2EquipmentTemplate', template, n);
 
 	template.LootStaticMesh = StaticMesh'UI_3D.Loot.AdventPCS';
     // TODO: dig into the assets
