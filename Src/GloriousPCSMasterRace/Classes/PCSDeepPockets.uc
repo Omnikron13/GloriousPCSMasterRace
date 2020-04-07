@@ -23,7 +23,7 @@ static function X2DataTemplate CreatePCSDeepPockets() {
 	Template.ItemCat = 'combatsim';
 	Template.TradingPostValue = 20;
 	Template.bAlwaysUnique = false;
-	Template.Tier = 0;
+	Template.Tier = 2;
     
 	Template.InventorySlot = eInvSlot_CombatSim;
 
