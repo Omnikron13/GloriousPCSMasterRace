@@ -32,6 +32,8 @@ static function X2DataTemplate CreatePCSDeepPockets() {
 
 	//Template.BlackMarketTexts = default.PCSBlackMarketTexts;
 
+    AddLootDrop('PCSDeepPockets', 'GPMRDropsEpic', 24); // TODO: config chance, perhaps table?
+
 	return Template;
 }
 
