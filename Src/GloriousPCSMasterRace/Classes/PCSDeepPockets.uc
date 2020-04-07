@@ -27,7 +27,6 @@ static function X2DataTemplate CreatePCSDeepPockets() {
     
 	Template.InventorySlot = eInvSlot_CombatSim;
 
-    Template.OnEquippedFn = EquipDelegate; // TODO: probably won't need
     Template.OnUnequippedFn = UnequipDelegate;
 
 	//Template.BlackMarketTexts = default.PCSBlackMarketTexts;
@@ -37,10 +36,6 @@ static function X2DataTemplate CreatePCSDeepPockets() {
 	return Template;
 }
 
-
-function EquipDelegate(XComGameState_Item itemState, XComGameState_Unit unitState, XComGameState gameState) {
-    // TODO: remove this, probably. It now does jack shit.
-}
 
 function UnequipDelegate(XComGameState_Item itemState, XComGameState_Unit unitState, XComGameState gameState) {
     // TODO: empty slot into HQ inventory when PCS is removed
