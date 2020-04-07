@@ -19,6 +19,7 @@ struct Tier {
 struct Chip {
     var string Name;
     var ECharStatType Stat;
+    var string Img;
     var array<Tier> Tiers;
 };
 var config array<Chip> Chips;
@@ -50,8 +51,11 @@ protected static function X2DataTemplate CreatePCSBasic(Chip c, int t) {
     `CREATE_X2TEMPLATE(class'X2EquipmentTemplate', template, n);
 
 	template.LootStaticMesh = StaticMesh'UI_3D.Loot.AdventPCS';
-    // TODO: dig into the assets
-	template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_CombatSim_Focus";
+    if(c.Img == "") {
+        template.strImage = "img:///Omnikron13_GloriousPCSMasterRace.Inventory.PCS_Blank";
+    } else {
+        template.strImage = c.Img;
+    }
 	template.ItemCat = 'combatsim';
     template.TradingPostValue = c.Tiers[t].Price;
 	template.bAlwaysUnique = false;
