@@ -102,9 +102,9 @@ private static function SetupUpgradeChance() {
 
 
 // Remove an existing drop from the loot tables (for clearing default PCS)
-private static function RemoveLootDrop(name loot, name table) {
+private static function RemoveLootDrop(name loot, name table, optional int group = 1) {
     local LootTableEntry e;
-    e.RollGroup = 1;
+    e.RollGroup = group;
     e.TemplateName = loot;
     class'X2LootTableManager'.static.RemoveEntryStatic(table, e, false);
 }
