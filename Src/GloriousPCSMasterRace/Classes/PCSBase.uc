@@ -80,6 +80,52 @@ private static function RecreateDefaultTables() {
 }
 
 
+// Replace vanilla entries in the Black Market PCS loot tables with GPMR drops.
+private static function UpdateBlackMarketTables() {
+    // Clear out vanilla PCS tables.
+    // TODO: find a dynamic way of doing this?
+    RemoveLootDrop('RarePCSSpeed', 'BlackMarketPCS_01', 1);
+    RemoveLootDrop('RarePCSConditioning', 'BlackMarketPCS_01', 1);
+    RemoveLootDrop('RarePCSFocus', 'BlackMarketPCS_01', 2);
+    RemoveLootDrop('RarePCSAgility', 'BlackMarketPCS_01', 2);
+    RemoveLootDrop('RarePCSPerception', 'BlackMarketPCS_01', 3);
+
+    RemoveLootDrop('RarePCSSpeed', 'BlackMarketPCS_02', 1);
+    RemoveLootDrop('EpicPCSSpeed', 'BlackMarketPCS_02', 1);
+    RemoveLootDrop('RarePCSConditioning', 'BlackMarketPCS_02', 1);
+    RemoveLootDrop('EpicPCSConditioning', 'BlackMarketPCS_02', 1);
+    RemoveLootDrop('RarePCSFocus', 'BlackMarketPCS_02', 2);
+    RemoveLootDrop('EpicPCSFocus', 'BlackMarketPCS_02', 2);
+    RemoveLootDrop('RarePCSAgility', 'BlackMarketPCS_02', 2);
+    RemoveLootDrop('EpicPCSAgility', 'BlackMarketPCS_02', 2);
+    RemoveLootDrop('RarePCSPerception', 'BlackMarketPCS_02', 3);
+    RemoveLootDrop('EpicPCSPerception', 'BlackMarketPCS_02', 3);
+
+    RemoveLootDrop('EpicPCSSpeed', 'BlackMarketPCS_03', 1);
+    RemoveLootDrop('EpicPCSConditioning', 'BlackMarketPCS_03', 1);
+    RemoveLootDrop('EpicPCSFocus', 'BlackMarketPCS_03', 2);
+    RemoveLootDrop('EpicPCSAgility', 'BlackMarketPCS_03', 2);
+    RemoveLootDrop('EpicPCSPerception', 'BlackMarketPCS_03', 3);
+
+
+    // Repopulate tables.
+    // These roll groups match the chances of the vanilla tables, which should ensure the same
+    // number of PCS chips available, just not the same distribution of rarity.
+    // TODO: config this
+    AddLootRef('GPMRDropsCommon', 'BlackMarketPCS_01', 50, 1);
+    AddLootRef('GPMRDropsRare', 'BlackMarketPCS_01', 40, 2);
+    AddLootRef('GPMRDropsRare', 'BlackMarketPCS_01', 25, 3);
+
+    AddLootRef('GPMRDropsRare', 'BlackMarketPCS_02', 60, 1);
+    AddLootRef('GPMRDropsRare', 'BlackMarketPCS_02', 60, 2);
+    AddLootRef('GPMRDropsEpic', 'BlackMarketPCS_02', 30, 3);
+
+    AddLootRef('GPMRDropsEpic', 'BlackMarketPCS_03', 60, 1);
+    AddLootRef('GPMRDropsEpic', 'BlackMarketPCS_03', 40, 2);
+    AddLootRef('GPMRDropsEpic', 'BlackMarketPCS_03', 30, 3);
+}
+
+
 // Allow a chance to 'upgrade' the drop to the next tier of drop table
 private static function SetupUpgradeChance() {
     local LootTableEntry e;
