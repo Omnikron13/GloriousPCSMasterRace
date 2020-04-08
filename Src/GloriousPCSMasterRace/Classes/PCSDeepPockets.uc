@@ -19,7 +19,7 @@ static function X2DataTemplate CreatePCSDeepPockets() {
 	`CREATE_X2TEMPLATE(class'X2EquipmentTemplate', Template, 'PCSDeepPockets');
 
 	Template.LootStaticMesh = StaticMesh'UI_3D.Loot.AdventPCS';
-	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_CombatSim_Focus";
+	Template.strImage = "img:///Omnikron13_GloriousPCSMasterRace.Inventory.PCSDeepPockets";
 	Template.ItemCat = 'combatsim';
 	Template.TradingPostValue = 20;
 	Template.bAlwaysUnique = false;
