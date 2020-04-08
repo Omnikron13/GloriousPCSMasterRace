@@ -123,12 +123,12 @@ protected static function AddLootDrop(name template, name table, int chance, opt
 
 
 // Add a reference to another table to a loot table
-protected static function AddLootRef(name child, name parent, int chance, optional int group = 1) {
+protected static function AddLootRef(name child, name parent, int chance, optional int group = 1, optional bool recalc = false) {
     local LootTableEntry e;
 
     e.TableRef = child;
     e.Chance = chance;
     e.RollGroup = group;
 
-    class'X2LootTableManager'.static.AddEntryStatic(parent, e, false);
+    class'X2LootTableManager'.static.AddEntryStatic(parent, e, recalc);
 }
