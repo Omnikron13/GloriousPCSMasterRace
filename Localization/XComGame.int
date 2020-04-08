@@ -60,3 +60,11 @@ No, neither do I."
 [UIArmory_Loadout]
 ; FIXME: Remove if/when moving the slot
 m_strInventoryLabels[eInvSlot_ExtraRocket4]=Deep Pockets
+
+
+
+[PCSFeedback X2EquipmentTemplate]
+FriendlyName="PCS: Feedback"
+FriendlyNamePlural="PCS: Feedback"
+BriefSummary="This should give their psykers a nasty surprise..."
+
