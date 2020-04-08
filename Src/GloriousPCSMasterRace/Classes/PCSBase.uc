@@ -21,8 +21,6 @@ protected static function CreateLootTable(name n) {
 
 // Pseudo-replace the default PCS drop tables with modded ones
 static function InjectLootTables() {
-    local LootTableEntry e;
-
     ClearDefaultTables();
     RecreateDefaultTables();
     SetupUpgradeChance();
@@ -31,16 +29,9 @@ static function InjectLootTables() {
     class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('GPMRDropsRare');
     class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('GPMRDropsEpic');
 
-    e.Chance = 100; // TODO: possibly config this
-	e.RollGroup = 1;
-    e.TableRef = 'GPMRDropsCommon';
-    class'X2LootTableManager'.static.AddEntryStatic('PCSDropsBasic', e);
-
-    e.TableRef = 'GPMRDropsRare';
-    class'X2LootTableManager'.static.AddEntryStatic('PCSDropsRare', e);
-
-    e.TableRef = 'GPMRDropsEpic';
-    class'X2LootTableManager'.static.AddEntryStatic('PCSDropsEpic', e);
+    AddLootRef('GPMRDropsCommon', 'PCSDropsBasic', 100, /**/, true);
+    AddLootRef('GPMRDropsRare', 'PCSDropsRare', 100, /**/, true);
+    AddLootRef('GPMRDropsEpic', 'PCSDropsEpic', 100, /**/, true);
 }
 
 
