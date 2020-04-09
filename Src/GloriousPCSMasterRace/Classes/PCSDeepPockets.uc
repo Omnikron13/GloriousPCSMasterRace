@@ -49,9 +49,9 @@ function UnequipDelegate(XComGameState_Item itemState, XComGameState_Unit unitSt
     equipped = unitState.GetItemInSlot(default.TEMP_SLOT); // FIXME: Remove if/when moving the slot
 
     if(equipped == None) {
-        `LOG("##############################################");
-        `LOG("#  Apparently no item in slot being removed  #");
-        `LOG("##############################################");
+        `DEBUG("##############################################");
+        `DEBUG("#  Apparently no item in slot being removed  #");
+        `DEBUG("##############################################");
         return;
     }
 
@@ -59,7 +59,7 @@ function UnequipDelegate(XComGameState_Item itemState, XComGameState_Unit unitSt
     unitState.RemoveItemFromInventory(equipped, gameState);
 	hq.PutItemInInventory(gameState, equipped);
 
-    `LOG("###############################################");
-    `LOG("#  Item transfered out of slot being removed  #");
-    `LOG("###############################################");
+    `DEBUG("###############################################");
+    `DEBUG("#  Item transfered out of slot being removed  #");
+    `DEBUG("###############################################");
 }

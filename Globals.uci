@@ -1,0 +1,4 @@
+// Macros! Yay!
+
+// Use this for all debug messages - will be stripped in release
+`define Debug(Str) `logd(`Str, /**/, 'GPMR');

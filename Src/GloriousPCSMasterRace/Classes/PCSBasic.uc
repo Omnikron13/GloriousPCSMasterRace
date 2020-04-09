@@ -33,7 +33,7 @@ static function array<X2DataTemplate> CreateTemplates() {
     for(n = 0; n < default.Chips.Length; n++) {
         for(t = 0; t < default.Chips[n].Tiers.Length; t++) {
             templates.AddItem(CreatePCSBasic(default.Chips[n], t));
-            `LOG("PCS Created:" @ templates[templates.Length-1].Name);
+            `DEBUG("PCS Created:" @ templates[templates.Length-1].Name);
         }
     }
 
