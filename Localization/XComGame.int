@@ -68,3 +68,9 @@ FriendlyName="PCS: Feedback"
 FriendlyNamePlural="PCS: Feedback"
 BriefSummary="This should give their psykers a nasty surprise..."
 
+
+
+[PCSLightningReflexes X2EquipmentTemplate]
+FriendlyName="PCS: Lightning Reflexes"
+FriendlyNamePlural="PCS: Lightning Reflexes"
+BriefSummary="Bob and weave!"
