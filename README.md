@@ -1,0 +1,1 @@
+<h1 align="center"><img alt="GPMR" src="https://raw.githubusercontent.com/Omnikron13/GloriousPCSMasterRace/master/ModPreview.jpg" /></h1>
