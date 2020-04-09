@@ -15,7 +15,7 @@ protected static function CreateLootTable(name n) {
     local LootTable lt;
     lt.TableName = n;
     class'X2LootTableManager'.static.AddLootTableStatic(lt);
-    `LOG("PCSBase: Created loot table:" @ n);
+    `DEBUG("PCSBase: Created loot table:" @ n);
 }
 
 
