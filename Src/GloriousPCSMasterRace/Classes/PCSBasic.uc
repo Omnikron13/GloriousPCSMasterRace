@@ -65,9 +65,6 @@ protected static function X2DataTemplate CreatePCSBasic(Chip c, int t) {
 	template.StatsToBoost.AddItem(c.Stat);
 	template.InventorySlot = eInvSlot_CombatSim;
 
-    // TODO: work out exactly what this is
-	//Template.BlackMarketTexts = default.PCSBlackMarketTexts;
-
     AddLootDrop(n, c.Tiers[t].DropTable, c.Tiers[t].DropChance);
 
 	return template;
