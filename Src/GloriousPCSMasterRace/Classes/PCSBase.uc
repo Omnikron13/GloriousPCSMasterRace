@@ -1,5 +1,8 @@
 // Base class for new PCS items, providing functionality for loot tables, etc.
-class PCSBase extends X2Item;
+class PCSBase extends X2Item config(PCSBase);
+
+
+var config array<name> LootTables;
 
 
 // Sets up loot tables which will essentially replace the inbuilt ones for PCS drops.
