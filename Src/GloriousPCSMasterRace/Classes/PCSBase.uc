@@ -38,6 +38,7 @@ static function InjectLootTables() {
 }
 
 
+// TODO: Move to LootTables?
 // Allow a chance to 'upgrade' the drop to the next tier of drop table
 private static function SetupUpgradeChance() {
     local LootTableEntry e;
