@@ -28,6 +28,7 @@ static function InjectLootTables() {
 
     SetupUpgradeChance();
 
+    // TODO: un-hardcode this
     class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('GPMRDropsCommon');
     class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('GPMRDropsRare');
     class'X2LootTableManager'.static.RecalculateLootTableChanceStatic('GPMRDropsEpic');
