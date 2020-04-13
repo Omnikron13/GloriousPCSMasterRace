@@ -63,6 +63,13 @@ m_strInventoryLabels[eInvSlot_ExtraRocket4]=Deep Pockets
 
 
 
+[PCSBetweenTheEyes X2EquipmentTemplate]
+FriendlyName="PCS: Between The Eyes"
+FriendlyNamePlural="PCS: Between The Eyes"
+BriefSummary="Boom! Headshot!"
+
+
+
 [PCSFeedback X2EquipmentTemplate]
 FriendlyName="PCS: Feedback"
 FriendlyNamePlural="PCS: Feedback"
